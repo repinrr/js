@@ -1,0 +1,1301 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*CSS-Reset by call007*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input, select, textarea {
+    margin: auto;
+    padding: inherit;
+}
+
+input {
+    vertical-align: middle;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-width: 1000px;
+    height: 100%;
+    color: #3d3d3d;
+    font-size: 12px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+    line-height: 1.2;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+    cursor: pointer;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+img {
+    padding: 0;
+    border: none;
+    color: #565656;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+fieldset {
+    padding : 10px;
+}
+
+
+.clr {
+    display: block;
+    clear: both;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-left {
+    float: left;
+}
+
+.block-right {
+    float: right;
+}
+
+section, header, footer, menu, nav, aside, article, details, summary, figure, figcaption, hgroup, time {
+    display: block;
+}
+/*End Reset*/
+
+/*INDEX*/
+.wrapper {
+    /*width:980px;*/
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.right-td td{
+    text-align : right;
+}
+
+input {
+    color: #222;
+}
+
+    input::-webkit-input-placeholder {
+        color: #c0c0c0;
+    }
+
+    input:-moz-placeholder {
+        color: #c0c0c0;
+    }
+
+    input.placeholder {
+        color: #c0c0c0;
+    }
+
+/* header - Begin */
+header .top {
+    height: 110px;
+    font-size: 12px;
+    color: #d0d0d0;
+    background: #262626 url(/content/lacar/images/bg_header-top.jpg) 50% 0 repeat-x;
+}
+
+    header .top .logo {
+        position: relative;
+        top: 28px;
+        display: block;
+        float: left;
+    }
+
+    header .top .user {
+        float: right;
+        padding-top: 42px;
+        text-align: right;
+        font-family: Tahoma;
+    }
+
+        header .top .user p {
+            margin-bottom: 0;
+        }
+
+        header .top .user a {
+            font-size: 11px;
+            color: #eb6a0e;
+            margin-left: 6px;
+        }
+
+            header .top .user a.link-quit {
+                color: #ff0000;
+            }
+
+    header .top .search {
+        overflow: hidden;
+        padding-left: 93px;
+        padding-top: 42px;
+        padding-bottom: 15px;
+    }
+
+        header .top .search p {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 0;
+            margin-right: 11px;
+        }
+
+        header .top .search .input {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            height: 25px;
+            padding: 2px;
+            background: #707070 url(/content/lacar/images/bg_search-input.gif) repeat-x;
+            -moz-border-radius: 14px;
+            -webkit-border-radius: 14px;
+            border-radius: 14px;
+            box-shadow: 0 1px 7px #222;
+            behavior: url(./PIE.htc);
+        }
+
+            header .top .search .input input {
+                position: relative;
+                width: 226px;
+                height: 15px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                padding: 5px 12px;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                background: #fff;
+                -moz-border-radius: 16px;
+                -webkit-border-radius: 16px;
+                border-radius: 16px;
+                behavior: url(./PIE.htc);
+            }
+
+        header .top .search .bt {
+            margin: 0 0 0 17px;
+            padding: 0;
+        }
+
+header .search-options {
+    margin-top: 5px;
+}
+
+    header .search-options label {
+        padding-right: 10px;
+    }
+
+header .bottom {
+    position: relative;
+    height: 42px;
+    color: #fff;
+    font-size: 12px;
+    border-bottom: 1px solid #894b00;
+    border-top: 1px solid #9f6015;
+    background: #ea630d url(/content/lacar/images/bg_header-bottom.gif) 0 0 repeat-x;
+}
+
+    header .bottom .wrapper {
+        position: relative;
+    }
+
+    header .bottom .phone {
+        position: relative;
+        float: left;
+        font-size: 16px;
+        text-shadow: 0 1px #ad540b;
+        padding: 13px 0 10px 43px;
+        margin-left: 16px;
+        margin-bottom: 0;
+        background: url(/content/lacar/images/bg_phone.png) 0 50% no-repeat;
+    }
+
+    header .bottom .info {
+        position: relative;
+        float: left;
+        padding-left: 80px;
+        padding-top: 6px;
+        font-family: Tahoma;
+        /*font-size: 7pt;*/
+        font-size: 12px;
+    }
+
+        header .bottom .info dl dt {
+            display: inline;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header .bottom .info dl dd {
+            display: inline;
+        }
+
+    header .bottom .bg_hotspot {
+        position: absolute;
+        width: 422px;
+        height: 22px;
+        top: 0;
+        left: -170px;
+        background: url(/content/lacar/images/bg_header-bottom-hotspot.png) 0 0 no-repeat;
+    }
+
+    header .bottom .cart-info {
+        float: right;
+        height: 42px;
+        font-size: 14px;
+        background: #373737 url(/content/lacar/images/bg_info-cart.gif) 0 0 repeat-x;
+    }
+
+        header .bottom .cart-info .bg_l {
+            height: 42px;
+            background: url(/content/lacar/images/bg_info-cart-l.gif) 0 0 no-repeat;
+        }
+
+        header .bottom .cart-info .bg_r {
+            height: 42px;
+            min-width: 100px;
+            padding: 0 30px 0 38px;
+            background: url(/content/lacar/images/bg_info-cart-r.gif) 100% 0 no-repeat;
+        }
+
+        header .bottom .cart-info strong {
+            text-transform: uppercase;
+        }
+
+        header .bottom .cart-info p {
+            margin: 0;
+            padding-top: 13px;
+        }
+
+    header .bottom .bt_cart {
+        position: relative;
+        top: 9px;
+        display: block;
+        float: right;
+        margin-left: 13px;
+    }
+/* header - End */
+
+/* .content - Begin */
+.content {
+    padding-top: 27px;
+    background: url(/content/lacar/images/bg_content.gif) 0 0 repeat-x;
+}
+
+aside {
+    float: left;
+    width: 204px;
+    padding-bottom: 25px;
+}
+
+.mainbar {
+    margin-left: 227px;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    font-family: Tahoma;
+}
+
+h1 {
+    color: #3e3e3e;
+    font-size: 12px;
+    /*font-size: 7pt;*/
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+h2 {
+    color: #3e3e3e;
+    font-size: 12px;
+    /*font-size: 7pt;*/
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inp-text {
+    margin: 0;
+    padding: 3px 5px 2px;
+    border: 1px solid #c9c8c7;
+    font-size: 12px;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separator {
+    font-size: 0;
+    line-height: 0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #d2d2d2;
+    margin-bottom: 27px;
+}
+
+select {
+    width: 228px;
+    height: 22px;
+    border: 1px solid #cacaca;
+    font-size: 12px;
+    color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+textarea {
+    width: 412px;
+    height: 45px;
+    overflow: auto;
+    resize: vertical;
+    margin: 0 0 11px;
+    padding: 3px 5px 2px;
+    border: 1px solid #c9c8c7;
+    font-size: 12px;
+    color: #3d3d3d;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #994800;
+    border: 1px solid #ff7800;
+    padding: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #ff7800 url(/content/lacar/images/bg_button.gif) 0 0 repeat-x;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background-color: #ffae00;
+        background-position: 0 -25px;
+    }
+/* .content - End */
+
+/* .menu - Begin */
+.menu {
+    position: relative;
+    overflow: hidden;
+    width: 203px;
+    list-style-type: none;
+    margin-bottom: 44px;
+    border: 1px solid #d3d3d3;
+    border-bottom: none;
+    background: #fff;
+    -moz-box-shadow: 0 2px 18px #c3c3c3;
+    -webkit-box-shadow: 0 2px 18px #c3c3c3;
+    box-shadow: 0 2px 18px #c3c3c3;
+    behavior: url(./PIE.htc);
+}
+
+    .menu li {
+        position: relative;
+        top: -1px;
+        border-bottom: 1px solid #d2d2d2;
+    }
+
+        .menu li.last {
+            margin-bottom: -1px;
+        }
+
+    .menu a.link {
+        position: relative;
+        display: block;
+        font-size: 14px;
+        color: #3e3e3e;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 11px 40px 10px 29px;
+        border-top: 1px solid #fff;
+        background: #e5e5e5;
+    }
+
+        .menu a.link:hover {
+            background: #d6d6d6;
+        }
+
+    .menu li.active a.link,
+    .menu li.active a.link:hover {
+        color: #fff;
+        background: #ff7800 url(/content/lacar/images/bg_menu-active.gif) 0 0 repeat-x;
+    }
+
+    .menu ul {
+        position: relative;
+        display: none;
+        list-style-type: none;
+        padding: 9px 29px 12px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+        .menu ul li {
+            border: none;
+            top: 0;
+        }
+
+        .menu ul a {
+            color: #595959;
+            text-decoration: none;
+        }
+
+            .menu ul a:hover, .menu ul li.active a {
+                color: #424242;
+                text-decoration: underline;
+            }
+
+        .menu ul li.active a {
+            cursor: default;
+        }
+
+    .menu li a.link i {
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        right: 25px;
+        top: 50%;
+        margin-top: -3px;
+        background: url(/content/lacar/images/bg_menu-arrow.gif) 0 0 no-repeat;
+    }
+
+    .menu li.active a.link i {
+        background-position: 0 -7px;
+    }
+
+/* .menu - End */
+
+/* .facebook - Begin */
+.facebook {
+    margin: 0 6px;
+}
+/* .facebook - End */
+
+/* table - Begin */
+table {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #d2d2d2;
+    margin-bottom: 12px;
+}
+
+    table td {
+        padding: 3px 11px;
+        /*font-size: 6.5pt;*/
+        font-size: 11px;
+    }
+
+        table td.even {
+            background: #f6f6f6;
+        }
+
+    table thead td, table thead th {
+        height: 31px;
+        /*font-size: 6.5pt;*/
+        font-size: 11px;
+        font-weight: bold;
+        color: #727272;
+        padding: 0 11px;
+        border-bottom: 1px solid #d2d2d2;
+        background: #fafafa;
+    }
+
+    table td a {
+        color: #3d3d3d;
+        text-decoration: none;
+    }
+
+        table td a:hover {
+            text-decoration: underline;
+        }
+
+    table tbody td {
+        border-bottom: 1px solid #d2d2d2;
+        border-top: 1px solid #fff;
+    }
+
+    table tbody tr.first td {
+        border-top: none;
+    }
+
+    table .bt_cart-add {
+        display: block;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    table .inp-text {
+        width: 40px;
+        text-align: center;
+        padding: 0;
+    }
+
+    table tbody td.number {
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+
+    table tbody tr.added td {
+        /*background: #f6e7db;*/
+    }
+
+        table tbody tr.added td.even {
+            /*background: #fbecdf;*/
+        }
+
+    table tbody tr.added .bt_cart-add img {
+        margin-top: -15px;
+    }
+
+    table tbody tr.in-stock td {
+        background-color: #FF4500;
+    }
+
+        table tbody tr.in-stock td.even {
+            background-color: #FF4500;
+        }
+
+    table tbody tr.searched-part td {
+        background-color: #99FF99;
+    }
+
+        table tbody tr.searched-part td.even {
+            background-color: #99FF99;
+        }
+
+    table tbody tr.rep-orig td {
+        background-color: #FFFF99;
+    }
+
+        table tbody tr.rep-orig td.even {
+            background-color: #FFFF99;
+        }
+
+    table tbody tr.on-comission td {
+        background-color: #FF4500;
+    }
+
+        table tbody tr.on-comission td.even {
+            background-color: #FF4500;
+        }
+
+.cart-column {
+    background-color: #F6F6F6 !important;
+}
+
+table .table-total td {
+    font-weight: bold;
+}
+/* table - End */
+
+/* .pagenav - Begin */
+.pagenav {
+    margin-top: -12px;
+    padding: 4px 11px 5px;
+    background: #fafafa;
+}
+
+    .pagenav a {
+        display: inline-block;
+        vertical-align: middle;
+        color: #666666;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 6px 7px 4px;
+    }
+
+        .pagenav a:hover {
+            text-decoration: underline;
+        }
+
+        .pagenav a.active,
+        .pagenav a.active:hover {
+            position: relative;
+            margin: 0 -4px;
+            color: #fff;
+            cursor: default;
+            background: #f37200;
+            text-decoration: none;
+            padding: 6px 11px 4px;
+        }
+
+    .pagenav span {
+        display: inline-block;
+        vertical-align: middle;
+        color: #818181;
+    }
+
+    .pagenav i {
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        height: 29px;
+        background: url(/content/lacar/images/bg_pagenav-sep.gif) 0 0 no-repeat;
+    }
+
+    .pagenav .prev,
+    .pagenav .next {
+        position: relative;
+        top: 1px;
+    }
+
+    .pagenav .prev {
+        margin-right: 15px;
+    }
+
+    .pagenav .next {
+        margin-left: 15px;
+    }
+
+    .pagenav a.prev,
+    .pagenav a.next {
+        font-weight: normal;
+        color: #333333;
+        text-decoration: underline;
+        padding: 0;
+    }
+
+        .pagenav a.prev:hover,
+        .pagenav a.next:hover {
+            text-decoration: none;
+        }
+/* .pagenav - End */
+
+/* footer - Begin */
+footer {
+    overflow: hidden;
+    position: relative;
+}
+
+    footer .top {
+        height: 42px;
+        border-top: 1px solid #525252;
+        color: #fff;
+        background: #1c1c1c url(/content/lacar/images/bg_footer-top.gif) 50% 0 repeat;
+    }
+
+        footer .top .wrapper {
+            position: relative;
+        }
+
+        footer .top .phone {
+            position: relative;
+            float: left;
+            font-size: 16px;
+            text-shadow: 0 1px #262524;
+            padding: 13px 0 10px 43px;
+            margin-left: 16px;
+            margin-bottom: 0;
+            color: #fff;
+            background: url(/content/lacar/images/bg_phone.png) 0 50% no-repeat;
+        }
+
+        footer .top nav {
+            position: relative;
+            float: right;
+            height: 42px;
+            margin-right: 67px;
+        }
+
+            footer .top nav ul {
+                height: 42px;
+                list-style-type: none;
+            }
+
+                footer .top nav ul li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 3px;
+                    padding-top: 13px;
+                }
+
+                    footer .top nav ul li a {
+                        color: #ff9130;
+                    }
+
+        footer .top .bg_hotspot-l {
+            position: absolute;
+            width: 422px;
+            height: 22px;
+            top: 0;
+            left: -155px;
+            background: url(/content/lacar/images/bg_footer-top-hotspot-l.png) 0 0 no-repeat;
+        }
+
+        footer .top .bg_hotspot-r {
+            position: absolute;
+            width: 424px;
+            height: 22px;
+            top: 0;
+            right: -408px;
+            background: url(/content/lacar/images/bg_footer-top-hotspot-r.png) 0 0 no-repeat;
+        }
+
+    footer .bottom {
+        height: 119px;
+        font-size: 11px;
+        color: #dadada;
+        background: #252525 url(/content/lacar/images/bg_footer-bottom.gif) 0 0 repeat-x;
+    }
+
+        footer .bottom p {
+            margin-bottom: 0;
+            padding-top: 26px;
+            margin-bottom: -2px;
+        }
+
+        footer .bottom a {
+            color: #dadada;
+        }
+
+        footer .bottom .copyright {
+            margin-left: 68px;
+        }
+
+        footer .bottom .payment {
+            float: right;
+        }
+
+            footer .bottom .payment .title {
+                font-size: 16px;
+                color: #ededed;
+                font-weight: bold;
+                padding-bottom: 10px;
+                margin-bottom: 14px;
+                border-bottom: 1px solid #474747;
+                padding-top: 23px;
+            }
+
+            footer .bottom .payment ul {
+                list-style-type: none;
+            }
+
+                footer .bottom .payment ul li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border: 1px solid #262626;
+                    margin: 0 3px;
+                    line-height: 0;
+                    font-size: 0;
+                }
+/* footer - End */
+
+/* .partner - Begin */
+.partner {
+    position: relative;
+    background: url(/content/lacar/images/bg_partner.jpg) 50% 30px no-repeat;
+}
+
+    .partner h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+/* .partner - End */
+
+/* .slider - Begin */
+.slider {
+    position: relative;
+    width: 930px;
+    padding: 30px 0 21px;
+    margin: 0 auto;
+}
+
+.partner .prev {
+    position: absolute;
+    top: 72px;
+    left: 5px;
+    display: block;
+    float: left;
+    width: 15px;
+    height: 36px;
+    cursor: pointer;
+    background: url(/content/lacar/images/bt_slider.png) 0 0 no-repeat;
+}
+
+    .partner .prev:hover {
+        background-position: 0 -36px;
+    }
+
+.partner .next {
+    position: absolute;
+    top: 72px;
+    right: 5px;
+    display: block;
+    float: right;
+    width: 15px;
+    height: 36px;
+    cursor: pointer;
+    background: url(/content/lacar/images/bt_slider.png) -15px 0 no-repeat;
+}
+
+    .partner .next:hover {
+        background-position: -15px -36px;
+    }
+
+.slider ul {
+    list-style-type: none;
+}
+
+    .slider ul li {
+        margin: 0 19px;
+    }
+/* .slider - End */
+
+/* .command - Begin */
+.command {
+    list-style-type: none;
+    text-align: center;
+}
+
+    .command li {
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        font-size: 12px;
+        padding-bottom: 38px;
+        color: #737373;
+    }
+
+        .command li p {
+            margin: 0 7px;
+        }
+
+        .command li strong {
+            font-size: 14px;
+            color: #2d2d2d;
+        }
+
+        .command li .img {
+            position: relative;
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 20px;
+        }
+
+            .command li .img i {
+                position: absolute;
+                left: -27px;
+                top: -2px;
+                width: 150px;
+                height: 114px;
+                background: url(/content/lacar/images/bg_command.png) 0 0 no-repeat;
+            }
+/* .command - End */
+
+/* .dl - Begin */
+.dl {
+    overflow: hidden;
+    padding-bottom: 14px;
+}
+
+    .dl dt {
+        float: left;
+        width: 100px;
+        padding-right: 7px;
+    }
+
+    .dl dd {
+        overflow: hidden;
+    }
+/* .dl - End */
+
+/* .contats - Begin */
+.contacts {
+    color: #282828;
+}
+
+    .contacts h2 {
+        color: #282828;
+        margin-bottom: 13px;
+    }
+/* .contats - End */
+
+/* .map - Begin */
+.map {
+    border: 1px solid #c8c8c8;
+}
+
+    .map img {
+        display: block;
+    }
+/* .map - End */
+
+/* .sitemap - Begin */
+.sitemap {
+    list-style-type: none;
+    margin-left: -18px;
+}
+
+    .sitemap li.cell {
+        width: 218px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 18px;
+        padding-bottom: 23px;
+    }
+
+        .sitemap li.cell ul {
+            list-style-type: none;
+            line-height: 1.6;
+        }
+
+            .sitemap li.cell ul ul {
+                padding-left: 20px;
+            }
+
+        .sitemap li.cell a {
+            text-decoration: none;
+            color: #3d3d3d;
+        }
+
+            .sitemap li.cell a:hover {
+                text-decoration: underline;
+                color: #222;
+            }
+
+        .sitemap li.cell .separator {
+            margin-bottom: 8px;
+        }
+/* .sitemap - End */
+
+/* .selection - Begin */
+.selection {
+    background: #fff;
+    border-top: 1px solid #d2d2d2;
+    padding: 20px 0 21px 19px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+    .selection dl,
+    .selection dl dt,
+    .selection dl dd {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .selection dl {
+        width: 330px;
+        padding-bottom: 9px;
+        margin-right: 18px;
+        white-space: nowrap;
+    }
+
+        .selection dl dt {
+            width: 85px;
+            padding-right: 10px;
+            white-space: normal;
+        }
+
+        .selection dl dd {
+            width: 229px;
+            white-space: normal;
+        }
+
+        .selection dl.even {
+            width: 272px;
+        }
+
+            .selection dl.even dt {
+                width: 62px;
+            }
+
+            .selection dl.even dd {
+                width: 195px;
+            }
+
+                .selection dl.even dd select {
+                    width: 193px;
+                }
+
+dl.search-second {
+    display: block;
+}
+
+.selection dl.search-second {
+    width: 621px !important;
+    margin-right: 0;
+    padding-top: 12px;
+    padding-bottom: 0;
+}
+
+    .selection dl.search-second dt {
+        width: 48px;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+
+    .selection dl.search-second dd {
+        position: relative;
+        width: 560px;
+        height: 25px;
+        overflow: hidden;
+        border-top: 2px solid #f08a12;
+        border-bottom: 2px solid #eb6c0f;
+        border-left: 2px solid #ef8420;
+        border-right: 2px solid #ef8420;
+        -moz-border-radius: 14px;
+        -webkit-border-radius: 14px;
+        border-radius: 14px;
+        behavior: url(./PIE.htc);
+    }
+
+    .selection dl.search-second .bt {
+        position: absolute;
+        width: 99px;
+        height: 29px;
+        right: -2px;
+        top: -2px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 1px 1px #8d3f08;
+        line-height: 31px;
+        background: url(/content/lacar/images/bt_search-second.gif) 0 0 no-repeat;
+    }
+
+        .selection dl.search-second .bt:hover {
+            background-position: 0 -29px;
+        }
+
+    .selection dl.search-second input {
+        position: relative;
+        width: 450px;
+        height: 15px;
+        margin: 0 0 0 12px;
+        padding: 0;
+        border: none;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+    }
+
+.selection.oil dl, .selection.oil dl.even {
+    width: 295px;
+    margin-right: 15px;
+}
+
+    .selection.oil dl dt {
+        width: 44px;
+    }
+
+    .selection.oil dl.even dt {
+        width: 62px;
+    }
+
+    .selection.oil dl.even dd select {
+        width: 228px;
+    }
+/* .selection - End */
+
+/* .setup - Begin */
+.setup {
+    list-style-type: none;
+    margin-left: -22px;
+}
+
+    .setup li {
+        display: inline-block;
+        vertical-align: top;
+        width: 334px;
+        margin-left: 22px;
+        padding-bottom: 17px;
+    }
+
+        .setup li table td {
+            padding: 6px 8px 6px 0;
+        }
+
+            .setup li table td.even {
+                background: #fafafa;
+                padding-left: 11px;
+            }
+
+            .setup li table td a {
+                color: #ea670e;
+                text-decoration: underline;
+            }
+
+                .setup li table td a:hover {
+                    text-decoration: none;
+                }
+
+            .setup li table td.empty {
+                padding-right: 0;
+            }
+
+                .setup li table td.empty div {
+                    position: relative;
+                    height: 10px;
+                    top: 10px;
+                    background: #ededed;
+                }
+/* .setup - End */
+
+/* .registration - Begin */
+.registration {
+    overflow: hidden;
+    color: #3d3d3d;
+    padding-bottom: 11px;
+}
+
+    .registration .left {
+        float: left;
+        width: 229px;
+    }
+
+    .registration dl {
+        padding-bottom: 11px;
+    }
+
+        .registration dl dt {
+            padding-bottom: 3px;
+        }
+
+    .registration .inp-text {
+        width: 216px;
+    }
+
+    .registration .right {
+        float: right;
+        width: 424px;
+    }
+
+        .registration .right .separator {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+
+    .registration dl dd span {
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+
+.inp-text.code {
+    width: 44px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.inp-text.number {
+    width: 130px;
+}
+
+.registration .terms-agreed {
+    position: relative;
+    float: right;
+    width: 188px;
+    color: #6f6f6f;
+    padding-left: 22px;
+}
+
+    .registration .terms-agreed a {
+        color: #6f6f6f;
+    }
+
+    .registration .terms-agreed input {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+/* .registration - End */
+
+.order-state-0 td, .order-state-1 td {
+    background-color: #FFFF64 !important;
+}
+
+.order-state-2 td {
+    background-color: #CC6633 !important;
+}
+
+.order-state-3 td {
+    background-color: #3399FF !important;
+}
+
+.order-state-4 , .order-state-4 td {
+    background-color: #00FF33 !important;
+}
+
+.order-state-5 td, .order-state-7 td {
+    background-color: #FF3333 !important;
+}
+
+.order-state-6 td {
+    background-color: #999999 !important;
+}
+
+.order-state-cancel-request td {
+    background-color: #FF1493 !important;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.messi-actions .btnbox {
+    margin-right: 10px;
+    float : right;
+}
+.btnbox .btn
+{
+    position: relative;
+    
+}
